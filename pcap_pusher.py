@@ -4,6 +4,7 @@ from datetime import datetime
 import pandas as pd
 import os
 import logging
+import secret_info
 
 logging.basicConfig(filename='pusher.log', level=logging.DEBUG, format='%(asctime)s:%(levelname)s:%(message)s')
 
@@ -47,7 +48,7 @@ def database_connection(df):
     try:
         logging.info("Connecting to database.")
         #Database connection    
-        client = MongoClient("mongodb+srv://admin_oe:oe123456789@flows.lizea4s.mongodb.net/test")
+        client = MongoClient(secret_info.database_connection)
         db = client["Main"]
         collection = db["flows"]
 
@@ -59,7 +60,7 @@ def database_connection(df):
     except Exception as e:
         logging.error(str(e) + "\n")
 
-pcap_path = "/home/erkahraman/Belgeler/python_dosyalari/NFStreamTest/pcaps/traffic.pcap"
+pcap_path = secret_info.pcap_path
 data = pcap_reader(pcap_path)
 database_connection(data)
 
