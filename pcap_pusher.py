@@ -17,7 +17,7 @@ def pcap_reader(pcap_path):
                             bpf_filter=None,
                             promiscuous_mode=True,
                             snapshot_length=1536,
-                            idle_timeout=120,
+                            idle_timeout=30,
                             active_timeout=1800,
                             accounting_mode=0,
                             udps=None,
