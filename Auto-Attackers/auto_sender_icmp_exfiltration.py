@@ -12,17 +12,17 @@ counter = 1
 while True:
     logging.info("Counter:", counter)
     for i in range(len(file_name)):
-        os.system("./qssender send file -d 2 -l 192.168.1.51 -r 192.168.1.49 -s 50000 {}".format(file_name[i]))
+        os.system("./qssender send file -d 2 -l 192.168.1.51 -r 192.168.1.54 -s 50000 {}".format(file_name[i]))
         logging.info("50.000 with {}".format(file_name[i]))
         time.sleep(40)
 
     for i in range(len(file_name)):
-        os.system("./qssender send file -d 2 -l 192.168.1.51 -r 192.168.1.49 -s 5000 {}".format(file_name[i]))
+        os.system("./qssender send file -d 2 -l 192.168.1.51 -r 192.168.1.54 -s 5000 {}".format(file_name[i]))
         logging.info("5.000 with {}".format(file_name[i]))
         time.sleep(40)
 
     for i in range(len(file_name)):
-        os.system("./qssender send file -d 2 -l 192.168.1.51 -r 192.168.1.49 -s 500 {}".format(file_name[i]))
+        os.system("./qssender send file -d 2 -l 192.168.1.51 -r 192.168.1.54 -s 500 {}".format(file_name[i]))
         logging.info("500 with {}".format(file_name[i]))
         time.sleep(40)
     

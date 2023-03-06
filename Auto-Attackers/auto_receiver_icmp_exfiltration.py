@@ -8,6 +8,6 @@ counter = 1
 while True:
     logging.info("Counter:", counter)
     logging.info("Receiving")
-    os.system("./qsreceive receive -l 192.168.1.49 -f received_file.txt")
+    os.system("./qsreceiver receive -l 192.168.1.54 -f received_file.txt")
     logging.info("Received\n")
     counter += 1
