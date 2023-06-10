@@ -1,0 +1,21 @@
+2023-06-10 05:28:29,486:INFO:Tshark Start
+2023-06-10 05:28:51,206:INFO:Tshark Stop
+2023-06-10 05:28:51,206:INFO:Succsess!
+
+2023-06-10 05:34:10,421:INFO:Tshark Start
+2023-06-10 05:34:31,732:INFO:Tshark Succsess!
+
+2023-06-10 05:34:31,732:ERROR:name 'kaynak_dizin' is not defined
+
+2023-06-10 05:35:22,874:INFO:Tshark Start
+2023-06-10 05:35:44,054:INFO:Tshark Succsess!
+
+2023-06-10 05:35:44,065:INFO:Move Succsess!
+
+2023-06-10 05:38:49,490:INFO:Tshark Start
+2023-06-10 05:39:00,608:INFO:Tshark Succsess!
+
+2023-06-10 05:39:00,609:INFO:Move Succsess!
+
+2023-06-10 05:39:00,609:INFO:Remove Succsess!
+
